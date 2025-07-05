@@ -1,0 +1,464 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            background: linear-gradient(to right, LightGreen 50%, LightBlue 50%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Healthy & Happy: Your Path to Wellness!</h1>
+    </header> 
+
+    <nav>
+        <a href="#diseases">Diseases</a>
+        <a href="#mental-illness">Mental Illness</a>
+        <a href="#other-disorders">Other Disorders</a>
+    </nav>
+<div class="container">
+        <title>Kids' Health Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #FDD0E5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            background-color: #FF1493;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #C71585;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Kids' Health Adventures!</h2>
+        <p>Did you know our bodies are like amazing puzzle boxes? Sometimes, things might not work as smoothly as they should, and that's when we talk about <strong>medical disorders</strong>.</p>
+        <p>Imagine a button for each disorder. Click on a button to learn more about it!</p>
+        <button id="btn1">Cough and Cold</button>
+        <button id="btn2">Bee Stings</button>
+        <button id="btn3">Sprained Ankle</button>
+        <div id="info"></div>
+    </div>
+
+    <script>
+        const infoDiv = document.getElementById('info');
+        const buttons = {
+            btn1: "Sometimes, we catch a <em>cough and cold</em>! It's like a sneezy puzzle, but rest and warm soup can help us feel better.",
+            btn2: "Ouch! Getting a <em>bee sting</em> can be painful, but don't worry! Ask an adult for help, and they'll make the sting feel better.",
+            btn3: "Oops, you might have a <em>sprained ankle</em> if you twist it the wrong way. RICE (Rest, Ice, Compression, Elevation) is the key to healing!"
+        };
+
+        Object.keys(buttons).forEach(id => {
+            const button = document.getElementById(id);
+            button.addEventListener('click', () => {
+                infoDiv.innerHTML = buttons[id];
+            });
+        });
+    </script>
+
+    <div class="container" id="diseases">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            background-color: #87CEFA;
+        }
+        .fun-paragraph {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #888888;
+            transition: transform 0.3s ease;
+        }
+        .fun-paragraph:hover {
+            transform: scale(1.1);
+        }
+        .button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="fun-paragraph">
+        <h2>Disease Diagnosis Adventure!</h2>
+        <p>Hey there, young explorers! Are you ready to embark on a journey to discover the secrets of diseases and their diagnosis? Click on the buttons below to begin your adventure:</p>
+        <button class="button" onclick="showSymptoms()">Show Me Symptoms</button>
+        <button class="button" onclick="showDiagnosisMethods()">Learn Diagnosis</button>
+    </div>
+    <p id="symptoms" style="display: none;">
+        <strong>Symptoms:</strong> Sometimes, our bodies send us signals when something isn't quite right. These signals can be things like coughing, sneezing, or feeling tired. When doctors try to figure out what's wrong, they ask about these signs and symptoms!
+    </p>
+    <p id="diagnosis" style="display: none;">
+        <strong>Diagnosis:</strong> Doctors use special tools and tests, just like detectives, to find out what's making you feel unwell. They might use stethoscopes, thermometers, or even X-rays to help them discover the mystery!
+    </p>
+
+    <script>
+        function showSymptoms() {
+            document.getElementById('symptoms').style.display = 'block';
+        }
+
+        function showDiagnosisMethods() {
+            document.getElementById('diagnosis').style.display = 'block';
+        }
+    </script>
+    <div class="container" id="mental-illness">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fascinating Healthcare Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            background-color: #FFFFFF;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 5px 5px 15px #888888;
+          ;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>💚 Fascinating Healthcare Facts 💚</h2>
+        <p>Did you know that laughter can boost your immune system? It's true! Laughter triggers the release of endorphins, which can improve your overall well-being.</p>
+        <p>Ever wondered why you feel sleepy after a big meal? Your body directs extra blood to your digestive system, causing less blood flow to your brain, making you feel drowsy.</p>
+        <p>Would you like to learn more fun healthcare facts? Click the button below:</p>
+        <button id="showFactsButton">Show More Facts</button>
+        <div id="factsContainer" style="display: none;">
+            <p>Here's an interesting fact: Hugging for at least 20 seconds can release the "love hormone" oxytocin, reducing stress and anxiety.</p>
+            <p>How about a brain teaser? Can you name the largest organ in the human body? <button id="answerButton">Give it a try!</button></p>
+            <p id="answer" style="display: none;">The skin! It's not just our body's protective shield but also its largest organ.</p>
+        </div>
+    </div>
+
+    <script>
+        const showFactsButton = document.getElementById('showFactsButton');
+        const factsContainer = document.getElementById('factsContainer');
+        const answerButton = document.getElementById('answerButton');
+        const answer = document.getElementById('answer');
+
+        showFactsButton.addEventListener('click', function() {
+            factsContainer.style.display = 'block';
+            showFactsButton.style.display = 'none';
+        });
+
+        answerButton.addEventListener('click', function() {
+            answer.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
+   
+    </div>
+    <div class="container" id="other-disorders">
+                <style>
+       
+        button {
+            background-color: #ffc600;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff8800;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kids Can Be Superheroes too!</h2>
+    <p>Hey there, young detectives! Did you know that you can help in diagnosing disorders and making the world a better place? Let's embark on this exciting journey together!</p>
+
+    <p>Imagine you meet a new friend, and they're feeling sad. What's the first thing you can do?</p>
+    <button id="askQuestion">Ask them how they feel</button>
+
+    <p>Great job! Asking someone about their feelings is a superpower. Now, here's another question:</p>
+    <button id="listenQuestion">How can you be a good listener?</button>
+
+    <p>That's right! Listening is a fantastic way to help. But wait, there's more:</p>
+    <button id="superheroQuestion">Can you tell a grown-up if you think someone needs help?</button>
+
+    <p>Amazing! You're like a superhero for caring about others. Remember, being kind, asking questions, and being a good friend are your superpowers in making the world a brighter place.</p>
+
+    <script>
+        const askQuestionButton = document.getElementById('askQuestion');
+        const listenQuestionButton = document.getElementById('listenQuestion');
+        const superheroQuestionButton = document.getElementById('superheroQuestion');
+
+        askQuestionButton.addEventListener('click', () => {
+            alert("That's right! By asking how someone feels, you show them that you care.");
+        });
+
+        listenQuestionButton.addEventListener('click', () => {
+            alert("Exactly! Being a good listener means giving your full attention and making someone feel heard.");
+        });
+
+        superheroQuestionButton.addEventListener('click', () => {
+            alert("You got it! Telling a grown-up when you think someone needs help is a superhero move.");
+        });
+    </script>
+        <!-- Add relevant content about diagnosing other disorders here -->
+    </div>
+  <title>Healthcare Trivia</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+            text-align: centre;
+            margin: 20px;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .answer-button {
+            background-color: green;
+            padding: 5px 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            font-style: italic;
+            
+        }
+    <title>Healthcare Trivia</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        .trivia {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .answer {
+            display: none;
+            color: blue;
+        }
+
+        .answer-button {
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+       <title>HealthCare</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .question {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .question:hover {
+            background-color: lightblue
+        }
+        .button {
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: darkgreen;
+        }
+        .answer {
+            color: blue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Health Care Trivia</h1>
+
+    <div class="question">
+        <h2>1.What is the largest human organ?</h2>
+        <button class="button" onclick="toggleAnswer(1)">Show Answer</button>
+        <p class="answer" id="answer1">The skin is the largest human organ.</p>
+    </div>
+
+    <div class="question">
+        <h2>2.What is the primary function of the red blood cells?</h2>
+        <button class="button" onclick="toggleAnswer(2)">Show Answer</button>
+        <p class="answer" id="answer2">The primary function of red blood cells is to transport oxygen throughout the body.</p>
+    </div>
+
+    <div class="question">
+        <h2>3.What is the chemical symbol for table salt?</h2>
+        <button class="button" onclick="toggleAnswer(3)">Show Answer</button>
+        <p class="answer" id="answer3">The chemical symbol for table salt is NaCl (Sodium Chloride).</p>
+    </div>
+
+    <div class="question">
+        <h2>4.What is the powerhouse of the cell?</h2>
+        <button class="button" onclick="toggleAnswer(4)">Show Answer</button>
+        <p class="answer" id="answer4">The powerhouse of the cell is the mitochondrion (mitochondria plural).</p>
+    </div>
+
+    <div class="question">
+        <h2>5.What do the letters CPR stand for in first aid?</h2>
+        <button class="button" onclick="toggleAnswer(5)">Show Answer</button>
+        <p class="answer" id="answer5">CPR stands for Cardiopulmonary Resuscitation.</p>
+    </div>
+
+    <script>
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById(`answer${questionNumber}`);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+ <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #ff5733;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Reaching the end of our adventure...</h2>
+        <p>Thank you for exploring ny website on diagnosing disorders. Learning about how doctors, psychologists, and experts diagnose and treat various conditions is not only informative but also crucial for everyone's well-being.</p>
+        <p>If you enjoyed this journey and want to learn more, you can click the button below to explore:</p>
+        <button class="button" id="playGameButton">Play a Fun Diagnostic Game</button>
+    </div>
+
+    <script>
+        
+        document.getElementById('playGameButton').addEventListener('click', function() {
+            // Redirect to a fun diagnostic game page.
+            window.location.href = 'https://www.healthforkids.co.uk/game/micro-doctor/';
+        });
+    </script>
+
+    <style>
+        .contact-info {
+            border: 2px solid #3498db;
+            padding: 10px;
+            text-align: center;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact the Creator:</h2>
+    
+    <div class="contact-info">
+        <h2>Shreya Sharma</h2>
+        <p>Email: shreya@gmail.com</p>
+        <p>Phone: (647) 573-2348</p>
+     
+    </div>
+
+</body>
+</html>
